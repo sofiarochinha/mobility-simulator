@@ -1,4 +1,4 @@
-package register;
+package auth;
 
 /**
  * Create a user with a name and id
@@ -7,27 +7,25 @@ package register;
 public class User {
 
      private String name;
-     private int id;
+     private int id, phoneNumber;
 
-    public User(String name, int id) {
+    public User(String name, int id, int phoneNumber) {
         this.name = name;
         this.id = id;
+        this.phoneNumber = phoneNumber;
     }
-
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getPhoneNumber() {
+        return phoneNumber;
     }
+
+
 }
